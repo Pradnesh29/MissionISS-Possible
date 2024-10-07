@@ -132,6 +132,12 @@
             text-decoration: none; /* Removes underline */
             color: inherit; /* Inherits the color from the parent element */
         }
+         .video-container {
+               display: flex;
+      justify-content: center;  /* Centers horizontally */
+      align-items: center;      /* Centers vertically (optional) */
+      height: 100vh;            /* Optional: full viewport height */
+    }
         
     </style>
 </head>
@@ -194,10 +200,13 @@
 
         </div>
     </section>
- <video width="640" height="360" controls>
+    <div class="video-container">
+
+    <video width="640" height="360" controls>
         <source src="https://youtu.be/K83or1wKQJs?si=yVGzuU6dJRLAJwNH" type="video/mp4">
   
         </video>
+    </div>
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 0-JMMPR. All rights reserved.</p>
